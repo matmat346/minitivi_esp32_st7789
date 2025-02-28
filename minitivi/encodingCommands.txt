@@ -1,0 +1,9 @@
+ffmpeg -i input4.mp4 -ar 44100 -ac 1 -q:a 9 output4.mp3
+
+ffmpeg -i input1.mp4 -vf "fps=24,scale=320 : 240:flags=lanczos" -q:v 3 output1.mjpeg
+	 tên đầu vào	kung hình     kích thước	 chất lươg  tên đầu ra	
+
+ffmpeg -i input2.mp4 -vf "transpose=1" input21.mp4
+	transpose=1: Xoay video 90 độ theo chiều kim đồng hồ.s
+	Nếu muốn xoay 90 độ ngược kim đồng hồ, dùng transpose=2.
+	Nếu muốn lật ngược (180 độ), dùng transpose=2,transpose=2
